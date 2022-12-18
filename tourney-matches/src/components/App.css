@@ -12,7 +12,7 @@
 }
 
 section.MatchList,
-section.PlayerList {
+section.ProductList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -28,14 +28,14 @@ section.MatchList > h1 {
   font-style: italic;
 }
 
-section.PlayerList > h1 {
+section.ProductList > h1 {
   width: 100%;
   text-align: center;
   font-style: italic;
 }
 
 article.Match,
-article.Player {
+article.Product {
   width: 30%;
   min-width: 300px;
   height: auto;
@@ -52,24 +52,24 @@ article.Match {
   border: 1px solid white;
 }
 article.Match:hover,
-article.Player:hover {
+article.Product:hover {
   box-shadow: 0px 0px 10px 0px #777;
 }
 
-article.Player:last-of-type {
+article.Product:last-of-type {
   margin-right: auto;
 }
 article.Match h1,
-article.Player h1 {
+article.Product h1 {
   width: 100%;
 }
 article.Match h1 span,
-article.Player h1 span {
+article.Product h1 span {
   font-style: italic;
   font-weight: lighter;
 }
 article.Match h2.zero,
-article.Player h2.zero {
+article.Product h2.zero {
   color: #555;
 }
 
