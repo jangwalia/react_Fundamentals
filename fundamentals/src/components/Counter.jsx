@@ -1,8 +1,17 @@
+import { useState } from "react";
 function Counter() {
+  const [count, setCount] = useState(0);
+  const incrementCounter = () => {
+    setCount((prev) => {
+      return prev + 1;
+    });
+  };
   return (
     <>
-      <input type="number" />
-      <button className="btn">Start Counter</button>;
+      <button onClick={incrementCounter} className="btn">
+        Clicked {count} Times
+      </button>
+      ;
     </>
   );
 }
