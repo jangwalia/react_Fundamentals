@@ -8,3 +8,8 @@
   text-align: center;
   color: aliceblue;
 }
+.ourCounter {
+  height: 50px;
+  background-color: aqua;
+  border-radius: 25%;
+}

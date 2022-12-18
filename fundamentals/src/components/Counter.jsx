@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../index.css";
 function Counter() {
   const [count, setCount] = useState(0);
   const incrementCounter = () => {
@@ -7,12 +8,11 @@ function Counter() {
     });
   };
   return (
-    <>
-      <button onClick={incrementCounter} className="btn">
+    <div>
+      <button onClick={incrementCounter} className="ourCounter">
         Clicked {count} Times
       </button>
-      ;
-    </>
+    </div>
   );
 }
 export default Counter;
