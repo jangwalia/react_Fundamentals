@@ -1,4 +1,4 @@
-constProductData = {
+const ProductData = {
   "3fd0a59a-6949-41cf-860f-bac5cd52e5e2": {
     productId: "3fd0a59a-6949-41cf-860f-bac5cd52e5e2",
     productName: "loveChair",
@@ -25,3 +25,5 @@ constProductData = {
     availableLocation: ["Delta", "Cloverdale"],
   },
 };
+
+export default ProductData;
