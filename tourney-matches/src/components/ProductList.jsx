@@ -1,8 +1,5 @@
 import Product from "./Product";
-import ProductArray from "../helper/productArrayConverter";
-import productData from "../_mocks_/productData";
-let arrayResponse = ProductArray(productData);
-function ProductList() {
+function ProductList({ arrayResponse }) {
   return (
     <section className="ProductList">
       <h1>Current Products</h1>

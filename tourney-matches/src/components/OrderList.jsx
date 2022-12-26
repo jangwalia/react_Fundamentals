@@ -1,14 +1,13 @@
 import Orders from "./Orders";
-import OrderSummary from "../_mocks_/orderData";
-function OrderList() {
+function OrderList({ productNames }) {
   return (
     <section className="OrderList">
       <h1>Current Orders</h1>
-      {OrderSummary.map((eachOrder, index) => (
+      {productNames.map((eachOrder, index) => (
         <Orders
           key={index}
           number={eachOrder.orderNumber}
-          products={eachOrder.Product}
+          products={eachOrder.Name}
           savedMoney={eachOrder.customerSaved}
         />
       ))}

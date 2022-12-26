@@ -4,9 +4,7 @@ function Orders({ number, products, savedMoney }) {
       <h1>The order number is {number}</h1>
       <h2>The Products in the orders are</h2>
       <ul>
-        {products.map((eachProduct, index) => (
-          <li key={index}>{eachProduct}</li>
-        ))}
+        <li key={number}>{products}</li>
       </ul>
       {savedMoney === 0 ? (
         <h2 className="zero">Customer Saved no money in this order</h2>
